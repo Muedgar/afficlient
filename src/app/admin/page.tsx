@@ -18,7 +18,7 @@ export default function Staff() {
     }else {
       document.getElementById(homeId)?.click()
     }
-  },[current])
+  },[current, homeId])
   return (
     <div className="w-screen flex-col relative">
     <Link id={homeId} href={'/'} className="hidden"></Link>

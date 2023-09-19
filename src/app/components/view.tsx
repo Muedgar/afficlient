@@ -38,7 +38,7 @@ export default function View({affidavits}:any) {
                  setDay(`${d}`)
                  setMonth(monthArray[new Date().getUTCMonth()])
                  setYear(`${new Date().getFullYear()}`)
-  }, [getOnce])
+  }, [getOnce, monthArray])
   const [languageTo, setLanguageTo] = useState("")
   const [languageBy, setLanguageBy] = useState("")
 
@@ -94,7 +94,7 @@ console.log("affidavits", affidavitsData)
         <img src={affidavit.right_profile_pic} className='w-[150px] h-[150px] object-contain absolute top-[200px] right-0 m-2 cursor-pointer' alt="right_profile" />
               
           {/* end profiles */}
-        <div className="w-[80%] mt-[100px] flex m-3 ml-[50px]">
+        <div className="w-[80%] mt-[200px] flex m-3 ml-[50px]">
           <p>I &#160;</p>
           {view==="create"?
         <input className={"outline-none p-[5px] border-2 border-green-300 w-[30%] focus:shadow-md focus:shadow-gray-900"

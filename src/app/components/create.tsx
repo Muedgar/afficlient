@@ -36,7 +36,7 @@ export default function CreateAffidavit() {
                  setDay(`${d}`)
                  setMonth(monthArray[new Date().getUTCMonth()])
                  setYear(`${new Date().getFullYear()}`)
-  }, [getOnce])
+  }, [getOnce,monthArray])
   const [languageTo, setLanguageTo] = useState("")
   const [languageBy, setLanguageBy] = useState("")
 

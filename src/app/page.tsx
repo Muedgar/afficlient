@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link"
+import Script from "next/script"
 import React, { useEffect, useId, useState } from "react"
 
 
@@ -35,6 +36,7 @@ export default function Home() {
   return (
    <>
    <div className='w-[80%] h-fit scroll-auto shadow-md shadow-black m-auto pb-[0px]'>
+    <Script src="https://upload-widget.cloudinary.com/global/all.js"></Script>
     <Link id={adminId} href={'/admin'} className="hidden"></Link>
     <Link id={staffId} href={'/staff'} className="hidden"></Link>
       <div className='w-full h-[500px] relative mt-[50px] flex justify-evenly bg-black'>
