@@ -95,7 +95,7 @@ function handleClickUploadImage(type:string, secure_url: string) {
   before_me: state.beforeMe
 }
 console.log(data)
- await fetch("http://localhost:3001/affidavit", {
+ await fetch("https://affi.onrender.com/affidavit", {
     method: "POST",
     mode: "cors", 
     cache: "no-cache", 

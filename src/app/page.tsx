@@ -109,7 +109,7 @@ export default function Home() {
       role: 'admin'
     }
 
-    await fetch("http://localhost:3001/auth/signup", {
+    await fetch("https://affi.onrender.com/auth/signup", {
     method: "POST",
     mode: "cors", 
     cache: "no-cache", 
@@ -149,7 +149,7 @@ export default function Home() {
       password
     }
 
-    await fetch("http://localhost:3001/auth/signin", {
+    await fetch("https://affi.onrender.com/auth/signin", {
     method: "POST",
     mode: "cors", 
     cache: "no-cache", 

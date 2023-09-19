@@ -134,7 +134,7 @@ export default function CreateStaff() {
       role: "staff"
     }
 
-    await fetch("http://localhost:3001/user", {
+    await fetch("https://affi.onrender.com/user", {
     method: "POST",
     mode: "cors", 
     cache: "no-cache", 

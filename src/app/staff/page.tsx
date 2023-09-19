@@ -25,7 +25,7 @@ let current = "once"
 let getAffiStatus = "once"
 useEffect(() => {
   async function getData() {
-    await fetch("http://localhost:3001/affidavit")
+    await fetch("https://affi.onrender.com/affidavit")
     .then(d => d.json())
     .then(d => {
       setAffidavits(d)
@@ -38,7 +38,7 @@ useEffect(() => {
 }, [getAffiStatus])
 
 async function getData() {
-    await fetch("http://localhost:3001/affidavit")
+    await fetch("https://affi.onrender.com/affidavit")
     .then(d => d.json())
     .then(d => {
       setAffidavits(d)
@@ -49,7 +49,7 @@ async function getData() {
   }
 
   async function getAffidavitByName() {
-    await fetch("http://localhost:3001/affidavit/name/"+search.trim())
+    await fetch("https://affi.onrender.com/affidavit/name/"+search.trim())
     .then(d => d.json())
     .then(d => {
       setAffidavits(d)

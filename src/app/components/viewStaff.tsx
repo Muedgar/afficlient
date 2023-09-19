@@ -14,7 +14,7 @@ export default function ViewStaff() {
 
   useEffect(() => {
     async function getData() {
-      await fetch("http://localhost:3001/user")
+      await fetch("https://affi.onrender.com/user")
         .then(d=>d.json())
         .then(d=>{
           let newD:any = []
@@ -120,7 +120,7 @@ export default function ViewStaff() {
 
 
   async function createdLastComesLast() {
-await fetch("http://localhost:3001/user")
+await fetch("https://affi.onrender.com/user")
         .then(d=>d.json())
         .then(d=>{
           let newD:any = []
@@ -138,7 +138,7 @@ await fetch("http://localhost:3001/user")
 
      function handleDelete(id: string) {
       async function del(key:string) {
-         await fetch("http://localhost:3001/user/"+key, {
+         await fetch("https://affi.onrender.com/user/"+key, {
     method: "DELETE",
     mode: "cors", 
     cache: "no-cache", 

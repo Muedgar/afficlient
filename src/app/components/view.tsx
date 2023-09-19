@@ -56,7 +56,7 @@ const [beforeMe, setBeforeMe] = useState('https://www.signature.org.uk/img/logos
 console.log("affidavits", affidavitsData)
  
   async function getAffidavitByName() {
-    await fetch("http://localhost:3001/affidavit/name/"+search.trim())
+    await fetch("https://affi.onrender.com/affidavit/name/"+search.trim())
     .then(d => d.json())
     .then(d => {
       setAffidavitsData(d)
