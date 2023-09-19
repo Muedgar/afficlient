@@ -111,7 +111,7 @@ console.log(data)
   })
 }
   return (
-    <div className="w-screen h-fit pb-5">
+    <div className="w-screen h-screen pb-5 overflow-y-scroll">
       <div className="w-[60%] h-fit pb-[50px] pt-[50px] relative bg-white shadow-sm shadow-slate-950 m-auto mt-[50px]">
         <div className="flex justify-center">
           <p role="CreateFormTitle" className="mt-[10px] font-serif text-2xl text-center">Affidavit Form</p>
